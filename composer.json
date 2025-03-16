@@ -13,14 +13,8 @@
   },
   "require": {
     "php": "^8.0",
-    "muballigh/moon-sighting": "dev-main"
+    "muballigh/moon-sighting": "^1.0"
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "../moon-sighting"
-    }
-  ],
   "minimum-stability": "dev",
   "prefer-stable": true
 }

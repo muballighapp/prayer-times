@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8624ec5db6f63a3b44a61061bf5bec1",
+    "content-hash": "2ea8a21934f76476d3689784e059a9c1",
     "packages": [
         {
             "name": "muballigh/moon-sighting",
-            "version": "dev-main",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/muballighapp/moon-sighting.git",
+                "reference": "a91a3d67d588b3ae0a2f13daf966a3a6d0c8daf1"
+            },
             "dist": {
-                "type": "path",
-                "url": "../moon-sighting",
-                "reference": "2ccdae79903f58568e5b6902bc64ba6553baf4b0"
+                "type": "zip",
+                "url": "https://api.github.com/repos/muballighapp/moon-sighting/zipball/a91a3d67d588b3ae0a2f13daf966a3a6d0c8daf1",
+                "reference": "a91a3d67d588b3ae0a2f13daf966a3a6d0c8daf1",
+                "shasum": ""
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.2"
@@ -23,13 +29,16 @@
                     "Muballigh\\MoonSighting\\": "src/MoonSighting/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-3.0-or-later"
             ],
             "description": "MoonSighting.com based library in  PHP",
-            "transport-options": {
-                "relative": true
-            }
+            "support": {
+                "issues": "https://github.com/muballighapp/moon-sighting/issues",
+                "source": "https://github.com/muballighapp/moon-sighting/tree/v1.0"
+            },
+            "time": "2025-03-16T21:05:31+00:00"
         }
     ],
     "packages-dev": [
@@ -1724,9 +1733,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "muballigh/moon-sighting": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
