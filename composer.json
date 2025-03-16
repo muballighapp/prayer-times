@@ -1,0 +1,26 @@
+{
+  "name": "muballigh/prayer-times",
+  "type": "library",
+  "description": "Accurate Prayer Times Library in PHP",
+  "license": "GPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "Muballigh\\Prayers\\": "src/Prayers/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  },
+  "require": {
+    "php": "^8.0",
+    "muballigh/moon-sighting": "dev-main"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../moon-sighting"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
