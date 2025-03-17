@@ -2,9 +2,9 @@
 $x = (realpath(__DIR__ . '/../vendor/autoload.php'));
 require_once($x);
 
-use IslamicNetwork\PrayerTimes\PrayerTimes;
-use IslamicNetwork\PrayerTimes\Method;
-use IslamicNetwork\MoonSighting\Isha;
+use Muballigh\Prayers\PrayerTimes;
+use Muballigh\Prayers\Method;
+use Muballigh\MoonSighting\Isha;
 
 class TimingsMoonSightingTest extends PHPUnit\Framework\TestCase
 {
@@ -14,6 +14,9 @@ class TimingsMoonSightingTest extends PHPUnit\Framework\TestCase
         $pt->setShafaq(Isha::SHAFAQ_GENERAL);
         $date = new DateTime('2014-4-24', new DateTimezone('Europe/London'));
         $t = $pt->getTimes($date, '51.508515', '-0.1254872');
+
+        print_r($t); // Print the array of prayer times
+
         $this->assertEquals('04:04', $t['Fajr']);
         $this->assertEquals('05:46', $t['Sunrise']);
         $this->assertEquals('12:59', $t['Dhuhr']);
